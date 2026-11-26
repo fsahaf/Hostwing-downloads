@@ -11,7 +11,7 @@ Partner Center rejects, so the MSI is served from this repository instead.
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Hostwing-1.8.0-x64.msi` | 69,025,792 bytes | `858042C7D9C2A83DA27F02E1CE75833321AD8F39E3ED714CAB9A7E436B5A4ABB` |
+| `Hostwing-1.8.0-x64.msi` | 69,025,792 bytes | `2C1C78FB73CB09BC9E9824A5EDB5E6EEB35BEF344783CF7AD61020D916A181F6` |
 
 ## Notes
 
