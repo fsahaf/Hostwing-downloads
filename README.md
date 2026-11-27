@@ -1,6 +1,6 @@
 # Hostwing downloads
 
-Installer host for the Microsoft Store submission of **Hostwing** — a multi-protocol
+Installer host for the Microsoft Store submission of **Hostwing** - a multi-protocol
 remote-desktop console for Windows. Source lives in a private repository.
 
 The Microsoft Store requires the package URL to return the file directly, with no HTTP
@@ -11,13 +11,24 @@ Partner Center rejects, so the MSI is served from this repository instead.
 
 | File | Size | SHA-256 |
 |---|---|---|
-| `Hostwing-1.8.0-x64.msi` | 69,025,792 bytes | `2C1C78FB73CB09BC9E9824A5EDB5E6EEB35BEF344783CF7AD61020D916A181F6` |
+| `releases/1.8.1/Hostwing-1.8.1-x64.msi` | 69,013,504 bytes | `E87CC591CA826D6124B6A10C8AA85CBAF295FA9EFA623927D6970FECEC1BE61C` |
+| `releases/1.8.0/Hostwing-1.8.0-x64.msi` | 69,025,792 bytes | `2C1C78FB73CB09BC9E9824A5EDB5E6EEB35BEF344783CF7AD61020D916A181F6` |
+
+## Direct URLs
+
+```
+https://raw.githubusercontent.com/fsahaf/Hostwing-downloads/main/releases/1.8.1/Hostwing-1.8.1-x64.msi
+https://raw.githubusercontent.com/fsahaf/Hostwing-downloads/main/releases/1.8.0/Hostwing-1.8.0-x64.msi
+```
 
 ## Notes
 
-- One file per released version. Existing files are never modified or deleted, because
-  the Store re-downloads the package it certified and fails on a byte mismatch.
-- The MSI installs per-user to `%LOCALAPPDATA%\Programs\Hostwing` and needs no
-  administrator rights.
+- One directory per released version. Existing files are never modified or deleted, because
+  the Store re-downloads the package it certified and fails on a byte mismatch. A new build
+  gets a new version directory, which also gives Partner Center a URL it has not cached a
+  validation verdict for.
+- The MSI installs per-machine to `C:\Program Files\Hostwing`, registers `Hostwing` by
+  `Farooq Sahaf` in Apps & Features, and prompts for administrator approval once during
+  installation. It does not touch `%APPDATA%\Hostwing`.
 - Privacy policy: https://fsahaf.github.io/Hostwing/PRIVACY.html
 - Licence terms: https://fsahaf.github.io/Hostwing/EULA.html
